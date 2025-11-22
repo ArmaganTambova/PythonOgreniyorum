@@ -54,5 +54,34 @@ Python bize hata çıkaracaktır (type Error). Bu hatayı alamamak için str() f
 tür dönüşümü gerçekleştirmemiz gerekir.
 """
 
+maas = 375562 # int
+prim = 56132.93 # float
 
+# İkiside matematiksel değişkenler
 
+toplam_maas = maas + prim # toplam_maas = float
+
+"""
+Python iki farklı değişkene, yani int ve float türüne sahip iki farklı değişkene,
+matematiksel işlemler sırasında type Error vermemek için arka planda
+otomaktik olarak int olan değişkeni float yapar. Çünkü iki değişkende matematiksel
+değişkenlerdir. Bu sebepten sadece bu duruma özel olarak bu işlem gerçekleşir.
+"""
+
+print("Toplam Maaşınız = " + str(toplam_maas) + "$'dır")
+print("1 Yıldaki Toplam Maaşınız = " + str(toplam_maas * 12) + "$'dır. TL Cinsinden = " + str((toplam_maas * 12) * 42.33) + "TL'dir")
+
+# Özet
+
+"""
+Özet:
+1. input() = Hep string Veri Verir.
+2. int() = Metni, Tam Sayıya Çevirir.
+3. float() = Metni, Ondalık Sayıya Çevirir.
+4. str() = Sayıyı (int or float) metne çevirir.
+
+Uyarı:
+Eğer ki int() veya float() içerisine matamatiksel olmayan bir değer girilirse (ÖRN: "beş"),
+Python "ValueError" hatası verir ve program çöker. 
+(Bu hatayı yönetmeyi ileride "Hata Ayıklama" dersinde göreceğiz.)
+"""
