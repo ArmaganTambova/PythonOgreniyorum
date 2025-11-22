@@ -42,7 +42,7 @@ print("Lütfen İsteyeceğimiz Verileri cm Cinsinden Giriniz.")
 silindirin_yaricapi = float(input("Lütfen Elinizdeki Silindirin Yarıçapını Giriniz: "))
 silindirin_yuksekligi = float(input("Lütfen Elinizdeki Silindirin Yüksekliğini Giriniz:"))
 
-silindirin_hacmi = 4.141592 * (silindirin_yaricapi ** 2) * silindirin_yuksekligi
+silindirin_hacmi = 3.141592 * (silindirin_yaricapi ** 2) * silindirin_yuksekligi
 
 print("Silindirin Hacmi ", silindirin_hacmi, " cm3'dir")
 
@@ -50,21 +50,21 @@ print("Silindirin Hacmi ", silindirin_hacmi, " cm3'dir")
 
 """
 Örneğin print() fonksiyonunda print("String Veri" + int_veri) yaptığımız zaman,
-Python bize hata çıkaracaktır (type Error). Bu hatayı alamamak için str() fonksiyonu ile,
+Python bize hata çıkaracaktır (TypeError). Bu hatayı alamamak için str() fonksiyonu ile,
 tür dönüşümü gerçekleştirmemiz gerekir.
 """
 
 maas = 375562 # int
 prim = 56132.93 # float
 
-# İkiside matematiksel değişkenler
+# İkisi de matematiksel değişkenler
 
 toplam_maas = maas + prim # toplam_maas = float
 
 """
 Python iki farklı değişkene, yani int ve float türüne sahip iki farklı değişkene,
 matematiksel işlemler sırasında type Error vermemek için arka planda
-otomaktik olarak int olan değişkeni float yapar. Çünkü iki değişkende matematiksel
+otomatik olarak int olan değişkeni float yapar. Çünkü iki değişkende matematiksel
 değişkenlerdir. Bu sebepten sadece bu duruma özel olarak bu işlem gerçekleşir.
 """
 
@@ -81,7 +81,7 @@ print("1 Yıldaki Toplam Maaşınız = " + str(toplam_maas * 12) + "$'dır. TL C
 4. str() = Sayıyı (int or float) metne çevirir.
 
 Uyarı:
-Eğer ki int() veya float() içerisine matamatiksel olmayan bir değer girilirse (ÖRN: "beş"),
+Eğer ki int() veya float() içerisine matematiksel olmayan bir değer girilirse (ÖRN: "beş"),
 Python "ValueError" hatası verir ve program çöker. 
 (Bu hatayı yönetmeyi ileride "Hata Ayıklama" dersinde göreceğiz.)
 """
