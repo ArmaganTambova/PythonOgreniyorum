@@ -8,7 +8,6 @@ Ancak gerçek hayatta hep düz gitmeyiz, duruma göre karar veririz.
 
 Python'da bu kurar mekanizmasını if, elif ve else ile kurarız.
 """
-from DegiskenlerVeTurler import kullanici_adi
 
 # if BLOĞU (EĞER)
 
